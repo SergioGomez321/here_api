@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Api HERE</title>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+        <script src="../globales.js" type="text/javascript" charset="utf-8"></script>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <link rel="stylesheet" type="text/css" href="https://js.api.here.com/v3/3.0/mapsjs-ui.css?dp-version=1533195059" />
+        <script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-core.js"></script>
+        <script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-service.js"></script>
+        <script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-ui.js"></script>
+        <script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-pano.js"></script>
+        <script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-mapevents.js"></script>
+        <link rel="stylesheet" type="text/css" href="http://js.api.here.com/v3/3.0/mapsjs-ui.css" />
+        <style>
+            #list{
+                position: absolute;
+                z-index: 1;
+            }
+
+            body {
+                background: radial-gradient(circle at 100% 50%,#85e0ce,#e7e1a0)
+            }
+
+            .label {
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-sm-6 form-group">
+                    <label class="label">City: </label>
+                    <input  type="text" id="txtMapa"  class="form-control shadow" placeholder="Ingresa Ciudad" autocomplete="off"/>
+                </div>
+                
+                <div id="divResultados" class="col-sm-6" style="margin-top: 30px">
+                    
+                    
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <h1 class="text-center"><b>Map</b></h1>
+                            </div><hr>
+                            <div class="card-text">
+                                <div style="height:350px; border-radius: 50px" id="mapa"></div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="jquery/jquery.js" type="text/javascript"></script>
+        <script src="js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="index.js" type="text/javascript"></script>
+    </body>
+</html>
