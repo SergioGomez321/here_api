@@ -26,14 +26,19 @@
             .label {
                 font-weight: bold;
             }
+            img.logo{
+                cursor: pointer;
+            }
         </style>
     </head>
     <body>
         <div class="container">
+            
             <div class="row mt-5">
+          
                 <div class="col-sm-6 form-group">
                     <label class="label">City: </label>
-                    <input  type="text" id="txtMapa"  class="form-control shadow" placeholder="Ingresa Ciudad" autocomplete="off"/>
+                    <input  type="text" id="txtMapa"  class="form-control shadow" placeholder="..." autocomplete="off"/>
                 </div>
                 
                 <div id="divResultados" class="col-sm-6" style="margin-top: 30px">
@@ -45,8 +50,11 @@
                 <div class="col-sm-12">
                     <div class="card shadow">
                         <div class="card-body">
-                            <div class="card-title">
-                                <h1 class="text-center"><b>Map</b></h1>
+                            <div class="card-title row">
+                                <a class="col-md-1" href="https://developer.here.com/" target="_blank">
+                                    <img class="text-left logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/HERE_logo.svg/1200px-HERE_logo.svg.png" alt="here logo" width="60">
+                                </a>
+                                <h1 class="text-center col-md-9"><b>Map</b></h1>
                             </div><hr>
                             <div class="card-text">
                                 <div style="height:350px; border-radius: 50px" id="mapa"></div>
