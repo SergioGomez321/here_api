@@ -4,7 +4,7 @@
   "description": "Project to consume services from the Here API",
   "main": "server/main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node main.js"
   },
   "author": "",
   "license": "ISC",
